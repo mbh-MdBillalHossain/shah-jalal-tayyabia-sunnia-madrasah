@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>শিক্ষার্থীর তথ্য</legend>
+            <label for="studentName">শিক্ষার্থীর পূর্ণ নাম:</label>
+            <input type="text" id="studentName" name="studentName" required><br><br>
+
+            <label for="dob">জন্ম তারিখ:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="birthID">জন্ম নিবন্ধন নম্বর:</label>
+            <input type="text" id="birthID" name="birthID" required><small>&nbsp;&nbsp;(১৬ বা ১৭ ডিজিট)</small><br><br>
+
+            <label for="gender">লিঙ্গ:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">পুরুষ</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">মহিলা</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">অন্যান্য</label><br><br>
+
+            <label for="bloodGroup">রক্তের গ্রুপ:</label>
+            <select id="bloodGroup" name="bloodGroup" required>
+                <option value="">--নির্বাচন করুন--</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select><br><br>
+
+            <label for="class">ভর্তি হওয়ার শ্রেণি:</label>
+            <select id="class" name="class" required>
+                <option value="">--নির্বাচন করুন--</option>
+                <option value="1">প্রথম শ্রেণি</option>
+                <option value="2">দ্বিতীয় শ্রেণি</option>
+                <option value="3">তৃতীয় শ্রেণি</option>
+                <option value="4">চতুর্থ শ্রেণি</option>
+                <option value="5">পঞ্চম শ্রেণি</option>
+            </select><br><br>
+
+            <label for="photo">পাসপোর্ট সাইজ ছবি:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>অভিভাবকের তথ্য</legend>
+            <label for="fatherName">পিতার নাম:</label>
+            <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+            <label for="fatherName">পিতার পেশা:</label>
+            <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+            <label for="motherName">মাতার নাম:</label>
+            <input type="text" id="motherName" name="motherName" required><br><br>
+
+            <label for="motherName">মাতার পেশা:</label>
+            <input type="text" id="motherName" name="motherName" required><br><br>
+
+            <label for="contactNumber">যোগাযোগ নম্বর:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+            <label for="address"> বর্তমান ঠিকানা:</label><br>
+            <textarea id="address" name="address" rows="6" cols="60" required></textarea><br><br>
+
+            <label for="address"> স্থায়ী ঠিকানা:</label><br>
+            <textarea id="address" name="address" rows="6" cols="60" required></textarea><br><br>
+
+            <input type="submit" value="জমা দিন" class="btn btn-primary">
+            <input type="reset" value="রিসেট করুন" class="btn btn-secondary">
+        </fieldset>
+    </form>
+</body>
+
+</html>
