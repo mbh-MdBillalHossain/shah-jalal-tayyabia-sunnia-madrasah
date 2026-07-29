@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teachers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>শিক্ষক পরিচিতি</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (ছবি না পাওয়া গেলে ফলব্যাক আইকনের জন্য) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- বাংলা ফন্ট -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>শিক্ষক পরিচিতি</h1>
-    <p>আমাদের শিক্ষকবৃন্দের পরিচয় এবং অভিজ্ঞতা</p>
+  <main class="col-lg-9 main-content">
+    <section class="hero mb-4">
+      <h2>শিক্ষক পরিচিতি</h2>
+      <p class="text-muted">
+        আমাদের প্রতিষ্ঠানের অভিজ্ঞ ও নিবেদিতপ্রাণ শিক্ষকবৃন্দ শিক্ষার্থীদের দ্বীনি ও আধুনিক শিক্ষায় গড়ে তুলতে নিরলস কাজ করে যাচ্ছেন।
+      </p>
+    </section>
+
+    <section class="row g-4">
+
+      <!-- শিক্ষক ১ -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card teacher-card h-100">
+          <div class="teacher-photo-wrap">
+            <img src="assets/teachers/image1.png" alt="মোঃ আব্দুল্লাহ আল আসিফ"
+              class="teacher-photo"
+              onerror="this.onerror=null;this.src='';this.parentElement.classList.add('teacher-photo-fallback');">
+            <i class="bi bi-person-circle teacher-photo-icon"></i>
+          </div>
+          <div class="card-body text-center">
+            <span class="badge teacher-badge mb-2">প্রধান শিক্ষক</span>
+            <h3 class="h6 mb-1">মোঃ আব্দুল্লাহ আল আসিফ</h3>
+            <p class="teacher-edu mb-2">কামিল (হাদিস) — ইসলামী আরবি বিশ্ববিদ্যালয়</p>
+            <p class="teacher-phone mb-0"><i class="bi bi-telephone"></i> +8801728431904</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- শিক্ষক ২ -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card teacher-card h-100">
+          <div class="teacher-photo-wrap">
+            <img src="assets/teachers/image2.png" alt="হাফেজ মোঃ রফিকুল ইসলাম"
+              class="teacher-photo"
+              onerror="this.onerror=null;this.src='';this.parentElement.classList.add('teacher-photo-fallback');">
+            <i class="bi bi-person-circle teacher-photo-icon"></i>
+          </div>
+          <div class="card-body text-center">
+            <span class="badge teacher-badge mb-2">সহকারী শিক্ষক (হিফজ বিভাগ)</span>
+            <h3 class="h6 mb-1">হাফেজ মোঃ রফিকুল ইসলাম</h3>
+            <p class="teacher-edu mb-2">ফাজিল, হিফজুল কুরআন সম্পন্ন</p>
+            <p class="teacher-phone mb-0"><i class="bi bi-telephone"></i> ০১৭XXXXXXXX</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- শিক্ষক ৩ -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card teacher-card h-100">
+          <div class="teacher-photo-wrap">
+            <img src="assets/teachers/image3.png" alt="মাওলানা মোঃ নূরুল ইসলাম"
+              class="teacher-photo"
+              onerror="this.onerror=null;this.src='';this.parentElement.classList.add('teacher-photo-fallback');">
+            <i class="bi bi-person-circle teacher-photo-icon"></i>
+          </div>
+          <div class="card-body text-center">
+            <span class="badge teacher-badge mb-2">সহকারী মৌলভী</span>
+            <h3 class="h6 mb-1">মাওলানা মোঃ নূরুল ইসলাম</h3>
+            <p class="teacher-edu mb-2">আলিম — ঢাকা আলিয়া মাদ্রাসা</p>
+            <p class="teacher-phone mb-0"><i class="bi bi-telephone"></i> ০১৭XXXXXXXX</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- শিক্ষক ৪ -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card teacher-card h-100">
+          <div class="teacher-photo-wrap">
+            <img src="assets/teachers/image4.png" alt="ক্বারী মোঃ শাহাদাত হোসেন"
+              class="teacher-photo"
+              onerror="this.onerror=null;this.src='';this.parentElement.classList.add('teacher-photo-fallback');">
+            <i class="bi bi-person-circle teacher-photo-icon"></i>
+          </div>
+          <div class="card-body text-center">
+            <span class="badge teacher-badge mb-2">ক্বারী সাহেব (কুরআন তিলাওয়াত)</span>
+            <h3 class="h6 mb-1">ক্বারী মোঃ শাহাদাত হোসেন</h3>
+            <p class="teacher-edu mb-2">কারী শিক্ষা কোর্স সম্পন্ন, তাজবীদ বিশেষজ্ঞ</p>
+            <p class="teacher-phone mb-0"><i class="bi bi-telephone"></i> ০১৭XXXXXXXX</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- শিক্ষক ৫ -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card teacher-card h-100">
+          <div class="teacher-photo-wrap">
+            <img src="assets/teachers/image5.png" alt="মোছাঃ সুমাইয়া খাতুন"
+              class="teacher-photo"
+              onerror="this.onerror=null;this.src='';this.parentElement.classList.add('teacher-photo-fallback');">
+            <i class="bi bi-person-circle teacher-photo-icon"></i>
+          </div>
+          <div class="card-body text-center">
+            <span class="badge teacher-badge mb-2">প্রাথমিক শিক্ষিকা</span>
+            <h3 class="h6 mb-1">মোছাঃ সুমাইয়া খাতুন</h3>
+            <p class="teacher-edu mb-2">দাখিল, প্রাথমিক শিক্ষায় ডিপ্লোমা (সি-ইন-এড)</p>
+            <p class="teacher-phone mb-0"><i class="bi bi-telephone"></i> ০১৭XXXXXXXX</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

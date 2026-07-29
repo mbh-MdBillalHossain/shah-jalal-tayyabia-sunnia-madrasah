@@ -1,13 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>সিলেবাস</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Syllabus</h1>
-    <p>Course syllabus and academic information</p>
-    
+  <main class="col-lg-9 main-content">
+    <section class="hero mb-4">
+      <h2>সিলেবাস</h2>
+      <p class="text-muted">
+        প্রথম থেকে পঞ্চম শ্রেণি পর্যন্ত প্রতিটি শ্রেণির জন্য নির্ধারিত বিষয় ও পাঠ্যক্রমের সংক্ষিপ্ত বিবরণ।
+      </p>
+    </section>
+
+    <div class="accordion" id="syllabusAccordion">
+
+      <!-- প্রথম শ্রেণি -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#syl1">
+            প্রথম শ্রেণি
+          </button>
+        </h2>
+        <div id="syl1" class="accordion-collapse collapse show" data-bs-parent="#syllabusAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>কুরআন তিলাওয়াত &mdash; নূরানী পদ্ধতিতে হরফ পরিচিতি ও প্রাথমিক তিলাওয়াত</li>
+              <li>বাংলা &mdash; বর্ণ পরিচয়, শব্দ গঠন, সহজ পাঠ</li>
+              <li>গণিত &mdash; সংখ্যা পরিচিতি (১-১০০), যোগ-বিয়োগের প্রাথমিক ধারণা</li>
+              <li>ইংরেজি &mdash; বর্ণমালা, সাধারণ শব্দ ও বাক্য পরিচিতি</li>
+              <li>দ্বীনিয়াত &mdash; কালিমা, নামাজের নিয়ম, প্রাথমিক দোয়া</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- দ্বিতীয় শ্রেণি -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#syl2">
+            দ্বিতীয় শ্রেণি
+          </button>
+        </h2>
+        <div id="syl2" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>কুরআন তিলাওয়াত &mdash; সহীহ উচ্চারণে সূরা মুখস্থকরণ শুরু</li>
+              <li>বাংলা &mdash; বাক্য গঠন, অনুচ্ছেদ পঠন ও লিখন</li>
+              <li>গণিত &mdash; যোগ-বিয়োগ-গুণ, স্থানীয় মান</li>
+              <li>আরবি &mdash; আরবি বর্ণ পরিচিতি ও যুক্তবর্ণ</li>
+              <li>ইংরেজি &mdash; সহজ বাক্য গঠন ও পঠন অনুশীলন</li>
+              <li>দ্বীনিয়াত &mdash; নামাজের সূরা, ওজু ও গোসলের নিয়ম</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- তৃতীয় শ্রেণি -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#syl3">
+            তৃতীয় শ্রেণি
+          </button>
+        </h2>
+        <div id="syl3" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>কুরআন তিলাওয়াত ও তাজবীদ &mdash; তাজবীদের প্রাথমিক নিয়মকানুন</li>
+              <li>বাংলা &mdash; ব্যাকরণের প্রাথমিক ধারণা, রচনা লিখন</li>
+              <li>গণিত &mdash; ভাগ, ভগ্নাংশের পরিচিতি, জ্যামিতিক আকার</li>
+              <li>আরবি ব্যাকরণ &mdash; ইসম-ফেল পরিচিতি, সরল বাক্য অনুবাদ</li>
+              <li>ইংরেজি &mdash; ব্যাকরণের প্রাথমিক ধারণা (Noun, Verb)</li>
+              <li>বাংলাদেশ ও বিশ্বপরিচয় &mdash; দেশ পরিচিতি, জাতীয় প্রতীক</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- চতুর্থ শ্রেণি -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#syl4">
+            চতুর্থ শ্রেণি
+          </button>
+        </h2>
+        <div id="syl4" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>কুরআন তিলাওয়াত ও তাজবীদ &mdash; মাখরাজ অনুশীলন, নির্ধারিত সূরা মুখস্থ</li>
+              <li>বাংলা &mdash; বিস্তারিত ব্যাকরণ, ভাবসম্প্রসারণ</li>
+              <li>গণিত &mdash; ভগ্নাংশ, দশমিক সংখ্যা, ঐকিক নিয়ম</li>
+              <li>আরবি ব্যাকরণ &mdash; বাক্য বিশ্লেষণ ও অনুবাদ অনুশীলন</li>
+              <li>ইংরেজি &mdash; প্যারাগ্রাফ লিখন, ব্যাকরণ (Tense পরিচিতি)</li>
+              <li>সাধারণ বিজ্ঞান &mdash; জীবজগৎ ও প্রকৃতি পরিচিতি</li>
+              <li>ইসলামের ইতিহাস &mdash; নবী-রাসূলদের সংক্ষিপ্ত জীবনী</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- পঞ্চম শ্রেণি -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#syl5">
+            পঞ্চম শ্রেণি
+          </button>
+        </h2>
+        <div id="syl5" class="accordion-collapse collapse" data-bs-parent="#syllabusAccordion">
+          <div class="accordion-body">
+            <ul class="mb-0">
+              <li>কুরআন তিলাওয়াত ও তাজবীদ &mdash; সম্পূর্ণ তাজবীদসহ তিলাওয়াত, নির্বাচিত সূরা মুখস্থ</li>
+              <li>বাংলা &mdash; সাহিত্য পরিচিতি, রচনা ও পত্র লিখন</li>
+              <li>গণিত &mdash; শতকরা, গড়, লাভ-ক্ষতি, জ্যামিতির প্রাথমিক সূত্র</li>
+              <li>আরবি ব্যাকরণ ও অনুবাদ &mdash; জটিল বাক্য বিশ্লেষণ, অনুবাদ চর্চা</li>
+              <li>ইংরেজি &mdash; রচনা লিখন, ব্যাকরণের বিস্তারিত অনুশীলন</li>
+              <li>সাধারণ বিজ্ঞান &mdash; মানবদেহ, পরিবেশ, বিজ্ঞানের ব্যবহারিক ধারণা</li>
+              <li>ইসলামের ইতিহাস ও দ্বীনিয়াত &mdash; খোলাফায়ে রাশেদার শাসনামল, ফিকহের প্রাথমিক মাসআলা</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

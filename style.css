@@ -89,3 +89,132 @@ body {
     border-bottom: 1px solid #e5e2d8;
   }
 }
+
+/* ===== TEACHER CARDS ===== */
+.teacher-card {
+  border: none;
+  border-top: 3px solid var(--brand-accent);
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(20, 83, 45, .06);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.teacher-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(20, 83, 45, .12);
+}
+.teacher-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--panel-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.teacher-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.teacher-photo-icon {
+  display: none;
+  font-size: 5rem;
+  color: #c9c5b8;
+}
+.teacher-photo-fallback .teacher-photo {
+  display: none;
+}
+.teacher-photo-fallback .teacher-photo-icon {
+  display: block;
+}
+.teacher-badge {
+  background-color: var(--brand-primary);
+  color: #fff;
+  font-weight: 500;
+  font-size: .75rem;
+  padding: .35em .75em;
+}
+.teacher-edu {
+  color: #495057;
+  font-size: .9rem;
+  margin-bottom: .25rem;
+}
+.teacher-phone {
+  color: var(--brand-primary);
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+/* ===== SHARED ACADEMIC CONTENT PAGES (routine/syllabus/exam/result) ===== */
+.section-title {
+  color: var(--brand-primary);
+  border-bottom: 2px solid var(--brand-accent);
+  padding-bottom: .4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.info-table thead th {
+  background-color: var(--brand-primary);
+  color: #fff;
+  font-weight: 600;
+  border-color: var(--brand-primary);
+}
+.info-table td,
+.info-table th {
+  vertical-align: middle;
+}
+
+.brand-alert {
+  background: var(--panel-bg);
+  border-left: 4px solid var(--brand-accent);
+  border-radius: .4rem;
+  padding: 1rem 1.25rem;
+}
+.brand-alert h3 {
+  color: var(--brand-primary);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.routine-tabs .nav-link {
+  color: var(--brand-primary);
+  font-weight: 500;
+}
+.routine-tabs .nav-link.active {
+  background-color: var(--brand-primary);
+  color: #fff;
+}
+
+.stat-box {
+  border-top: 3px solid var(--brand-accent);
+  border-radius: .5rem;
+  box-shadow: 0 2px 8px rgba(20, 83, 45, .06);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  background: #fff;
+}
+.stat-box .stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  line-height: 1;
+}
+.stat-box .stat-label {
+  color: #6c757d;
+  font-size: .9rem;
+  margin-top: .35rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--panel-bg);
+  color: var(--brand-primary);
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--brand-accent);
+}
